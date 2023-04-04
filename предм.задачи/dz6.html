@@ -47,7 +47,7 @@
             let v = 14;
             let ln = s2.length;
             for (let i = 0; i < ln; i++) {
-                p[i] = s2[i].reduce((a,b) => Number(a) + Number(b), 0);  
+                p[i] = s2[i].reduce((sum, item, index, array) => Number(sum) + Number(item), 0);  
               if (num == p[i]) {
                 alert('Число совпало!') }
               };
