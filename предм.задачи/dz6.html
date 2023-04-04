@@ -43,18 +43,18 @@
               return sal.split('');
             });
             let p = [];
-            let v = 14;
+            
             let ln = s2.length;
             for (let i = 0; i < ln; i++) {
-                p[i] = s2[i].reduce((sum, item, index, array) => Number(sum) + Number(item), 0);  
-             };
-                alert('Число совпало!') 
+                p[i] = s2[i].reduce((sum, item, index, array) => {
+                 return  Number(sum) + Number(item)
+                })
+            };
+             
+             let v = 14;
+                alert('Число совпало!') ;
              
             
 console.log(p);
-
-        
-          
 </script>
 </body>
-</html>
