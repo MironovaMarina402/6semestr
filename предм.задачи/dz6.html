@@ -42,15 +42,14 @@
             let s2 = s1.map(function(sal) {
               return sal.split('');
             });
-            let num = prompt('Выберите число 14; 23; 105');
             let p = [];
             let v = 14;
             let ln = s2.length;
             for (let i = 0; i < ln; i++) {
                 p[i] = s2[i].reduce((sum, item, index, array) => Number(sum) + Number(item), 0);  
-              if (num == p[i]) {
-                alert('Число совпало!') }
-              };
+             };
+                alert('Число совпало!') 
+             
             
 console.log(p);
 
